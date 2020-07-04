@@ -122,4 +122,4 @@ class Particle:
     # Function to find the shortest distance
     @staticmethod
     def dist_to_circle(x1, y1, x2, y2, r):
-        return ((((x2 - x1) ** 2) + ((y2 - y1) ** 2)) ** (1 / 2)) - r
+        return np.abs(((((x2 - x1) ** 2) + ((y2 - y1) ** 2)) ** (1 / 2)) - r)
